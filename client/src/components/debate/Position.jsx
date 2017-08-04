@@ -59,7 +59,7 @@ class Position extends React.Component {
     })
     .then(response=> {
         let args = response.data.data;
-        let topSortedArgs = sortArgsByVote(args).slice(0, 5);
+        let topSortedArgs = sortArgsByVote(args).slice(0, 10);
         this.setState({
           arguments: topSortedArgs
         })
@@ -102,7 +102,7 @@ class Position extends React.Component {
       })
       .then(response=> {
           let args = response.data.data;
-          let topSortedArgs = sortArgsByVote(args).slice(0, 5);
+          let topSortedArgs = sortArgsByVote(args).slice(0, 10);
           this.setState({
             arguments: topSortedArgs
           })
@@ -154,7 +154,7 @@ class Position extends React.Component {
 
   render() {
     return (
-      <div className='col-sm-6'>
+      <div className='col-sm-6 bg-primary'>
           <h3>{this.props.position}</h3>
           <div><h4>{this.state.points} Points</h4></div>
         {this.props.showJoinButton ? <Button onClick={this.props.setToken} bsStyle="success">Join</Button> : null}

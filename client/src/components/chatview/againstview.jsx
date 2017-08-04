@@ -37,7 +37,8 @@ export default class Againstview extends React.Component {
         <h3>Side: Against</h3>
           <div className="row">
               <div className="col-md-5">
-                  <div className="panel panel-primary">
+                <div className="panel panel-default">
+                  <div className="panel-heading panel-heading-custom">
                       <div className="panel-heading" id="accordion">
                           <span className="glyphicon glyphicon-comment"></span> Against
                             <div className="btn-group pull-right">
@@ -46,6 +47,8 @@ export default class Againstview extends React.Component {
                               </a>
                             </div>
                       </div>
+                  </div>
+                </div>    
                       <div className="panel-collapse collapse in" id="collapse1">
                         <div className="panel-body">
                           <div id="chat-window-output" ref="output"></div>
@@ -74,8 +77,7 @@ export default class Againstview extends React.Component {
                       </div> 
                   </div>
               </div>      
-          </div>
-        </div>     
+          </div>   
         )
      }
   }

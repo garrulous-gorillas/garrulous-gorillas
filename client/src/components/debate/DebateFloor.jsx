@@ -76,7 +76,7 @@ class DebateFloor extends React.Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-md-6 col-md-offset-3"><h2>{this.props.currentDebateSelected.topic}</h2></div>
+          <div className="col-md-6 col-md-offset-3 jumbotron text-center bg-inverse text-white"><h1>{this.props.currentDebateSelected.topic}</h1></div>
         </div>
           <div className="row">
             <Position position="For" 
